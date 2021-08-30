@@ -57,7 +57,7 @@ export default function Sendmail() {
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Button type="submit" value="Send" variant="primary">Send Fart</Button>
+                            <Button type="submit" value="Send" className="btnSubmit">Send Fart</Button>
                         </Form.Group>
                         <h5 >Don't be shy we send farts to your friends for you!</h5>
 
@@ -80,7 +80,7 @@ export default function Sendmail() {
 
 
             <div className="footer" md={12} xs={12} >
-                Made with ❤️ in quarantine
+                Made with ❤️ in quarantine 
             </div>
         </Container>
 

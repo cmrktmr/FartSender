@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 
 .App {
   height          : 100vh;
-  background-color: #b1789bbd;
+  background-color: #bd00ff59;
 
+}
+.btnSubmit{
+  color: #fff !important; 
+  background-color:orange !important;
+  border-color: orange !important;
+}
+
+.btnSubmit::hover{
+  color: orange(116, 103, 103);
+  background-color:white;
+  border-color: orange;
 }
 
 .logo {
