@@ -1,20 +1,19 @@
-
-
 .App {
-  height          : 100vh;
+
   background-color: #bd00ff59;
-
-}
-.btnSubmit{
-  color: #fff !important; 
-  background-color:orange !important;
-  border-color: orange !important;
+  height          : 100vh;
 }
 
-.btnSubmit::hover{
-  color: orange(116, 103, 103);
-  background-color:white;
-  border-color: orange;
+.btnSubmit {
+  color           : #fff !important;
+  background-color: orange !important;
+  border-color    : orange !important;
+}
+
+.btnSubmit:hover {
+  color           : orange(116, 103, 103);
+  background-color: white;
+  border-color    : orange;
 }
 
 .logo {
@@ -24,12 +23,13 @@
 .unicorn {
   width: 80%;
 }
-.footer{
-position: fixed;
-left: 0;
-bottom: 10%;
-width: 100%;
-text-align: center;
+
+.footer {
+  position  : fixed;
+  left      : 0;
+  bottom    : 10%;
+  width     : 100%;
+  text-align: center;
 }
 
 /* 

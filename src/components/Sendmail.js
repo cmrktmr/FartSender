@@ -1,13 +1,11 @@
 import emailjs from 'emailjs-com';
 import Form from 'react-bootstrap/Form'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button';
+import { Container, Col, Row, Button, Modal } from 'react-bootstrap'
 import unicorn from "../unicorn.png"
 import '../App.css';
 import logo from "../logo.png"
-import Modal from 'react-bootstrap/Modal'
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Sendmail() {
     const [show, setShow] = useState(false);
 
@@ -32,14 +30,14 @@ export default function Sendmail() {
         <Container>
             <div className="d-flex justify-content-center">
 
-                <img src={logo} className="logo"  alt="fart sender logo" />
+                <img src={logo} className="logo" alt="fart sender logo" />
             </div>
 
-            <div className="d-flex  ">
-                <Col md={6} sm={12} xs={6}>
+            <Row>
+                <Col lg={6} md={6} sm={12} xs={12}>
                     <img src={unicorn} className="unicorn" alt="fart sender" />
                 </Col>
-                <Col md={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                     <Form onSubmit={Sendmail}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" >
                             <Form.Label>Your Name</Form.Label>
@@ -63,8 +61,12 @@ export default function Sendmail() {
 
                     </Form>
                 </Col>
-            </div>
+            </Row>
 
+
+            <div className="footer" md={12} xs={12} >
+                Made with ❤️ in quarantine
+            </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Fart Status</Modal.Title>
@@ -77,11 +79,6 @@ export default function Sendmail() {
 
                 </Modal.Footer>
             </Modal>
-
-
-            <div className="footer" md={12} xs={12} >
-                Made with ❤️ in quarantine 
-            </div>
         </Container>
 
 
