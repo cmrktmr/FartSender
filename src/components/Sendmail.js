@@ -54,7 +54,7 @@ export default function Sendmail() {
                             <Form.Control name="mesaj" className="rounded-4" as="textarea" rows={1} />
                         </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Group className="mb-5" controlId="exampleForm.ControlTextarea1">
                             <Button type="submit" value="Send" className="btnSubmit">Send Fart</Button>
                         </Form.Group>
                         <h5 >Don't be shy we send farts to your friends for you!</h5>
