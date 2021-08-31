@@ -28,9 +28,9 @@ export default function Sendmail() {
     return (
 
         <Container>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mb-3">
 
-                <img src={logo} className="logo" alt="fart sender logo" />
+                <img src={logo} className="logo " alt="fart sender logo" />
             </div>
 
             <Row>
