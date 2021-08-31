@@ -1,7 +1,7 @@
 .App {
 
   background-color: #bd00ff59;
-  height          : 100vh;
+  min-height          : 100vh;
 }
 
 .btnSubmit {
