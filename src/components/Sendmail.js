@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form'
 import { Container, Col, Row, Button, Modal } from 'react-bootstrap'
 import unicorn from "../unicorn.png"
 import '../App.css';
+import fartuni from "../fart.png"
 import logo from "../logo.png"
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,6 +37,7 @@ export default function Sendmail() {
             <Row>
                 <Col lg={6} md={6} sm={12} xs={12}>
                     <img src={unicorn} className="unicorn" alt="fart sender" />
+                    {/* <img src={fartuni} className="unicorn" alt="fart sender" /> */}
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12}>
                     <Form onSubmit={Sendmail}>
@@ -71,7 +73,9 @@ export default function Sendmail() {
                 <Modal.Header closeButton>
                     <Modal.Title>Fart Status</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you fart sent successfully.</Modal.Body>
+                <Modal.Body className="text-center">Woohoo, you fart sent successfully.
+                <img src={fartuni} className="unicorn" alt="fart sender" />
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
